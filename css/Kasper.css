@@ -294,6 +294,10 @@ header .container nav .toggle-menu:hover + ul li a {
 }
 .services .container .srv-box i {
   margin-right: 50px;
+  transition: 0.3s;
+}
+.services .container .srv-box i:hover {
+  transform: scale(1.1);
 }
 @media (max-width: 767px) {
   .services .container .srv-box {
@@ -388,3 +392,90 @@ header .container nav .toggle-menu:hover + ul li a {
   max-width: 500px;
 }
 /* end Design */
+
+/* start portfolio */
+.portfolio {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.portfolio .shuffle {
+  display: flex;
+  justify-content: center;
+}
+.portfolio .shuffle li {
+  padding: 10px;
+  border-radius: 3px;
+  transition: 0.2s;
+}
+.portfolio .shuffle li.active {
+  color: white;
+  background-color: var(--main-color);
+  padding: 10px;
+}
+.portfolio .shuffle li:hover {
+  color: white;
+  background-color: var(--main-color);
+}
+.portfolio .imgs-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 60px;
+}
+.portfolio .imgs-container .box {
+  flex-basis: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.portfolio .imgs-container .box:hover .caption {
+  bottom: 0;
+}
+.portfolio .imgs-container .box:hover img {
+  transform: scale(1.1) rotate(4deg);
+}
+.portfolio .imgs-container .box img {
+  max-width: 100%;
+  transition: 0.3s;
+}
+@media (min-width: 768px) {
+  .portfolio .imgs-container .box {
+    flex-basis: 50%;
+  }
+}
+@media (min-width: 1199px) {
+  .portfolio .imgs-container .box {
+    flex-basis: 25%;
+  }
+}
+.portfolio .imgs-container .box .caption {
+  position: absolute;
+  padding: 20px;
+  background-color: white;
+  width: 100%;
+  transition: 0.3s;
+  bottom: -100%;
+}
+.portfolio .imgs-container .box .caption h4 {
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.portfolio .imgs-container .box .caption p {
+  color: var(--main-color);
+  font-size: 13px;
+}
+.portfolio .more {
+  background-color: var(--main-color);
+  color: white;
+  padding: 15px 20px;
+  display: block;
+  width: fit-content;
+  margin: 50px auto;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+.portfolio .more:hover {
+  background-color: rgba(25, 201, 250, 0.7);
+  transform: scale(1.1);
+  border-radius: 5px;
+}
+/* end portfolio */
