@@ -628,4 +628,115 @@ header .container nav .toggle-menu:hover + ul li a {
 }
 /* end Statistics */
 
-
+/* start Our Skills */
+.Our-Skills {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.Our-Skills .container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+@media (min-width: 992px) {
+  .Our-Skills .container > div {
+    flex-basis: 45%;
+  }
+}
+.Our-Skills .container > div > h3 {
+  margin: 0 0 30px;
+  font-weight: normal;
+  text-align: center;
+  text-transform: uppercase;
+}
+.Our-Skills .container > div > p {
+  color: #777;
+  line-height: 2;
+  text-align: center;
+  margin-bottom: 60px;
+}
+.Our-Skills .testimonials .box {
+  display: flex;
+  margin-bottom: 30px;
+  align-items: center;
+}
+.Our-Skills .testimonials .box img {
+  width: 100px;
+  border-radius: 50%;
+  margin-right: 50px;
+}
+@media (max-width: 767px) {
+  .Our-Skills .testimonials .box {
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+  }
+  .Our-Skills .testimonials .box img {
+    margin: 0 auto 20px;
+  }
+}
+.Our-Skills .testimonials .box .text {
+  border-bottom: 1px solid #333;
+  line-height: 1.8;
+}
+.Our-Skills .testimonials .box .text p {
+  color: #777;
+  text-align: right;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.Our-Skills .container .testimonials .bullets {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0;
+}
+.Our-Skills .container .testimonials .bullets li {
+  width: 14px;
+  height: 14px;
+  border: 1px solid #aaa;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.Our-Skills .container .testimonials .bullets li.active {
+  background-color: var(--main-color);
+}
+.Our-Skills .container .skills .prog-holder {
+  margin-bottom: 50px;
+}
+.Our-Skills .container .skills .prog-holder h4 {
+  margin-bottom: 15px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+.Our-Skills .container .skills .prog-holder .prog {
+  background-color: #dedadc;
+  height: 30px;
+}
+.Our-Skills .container .skills .prog-holder .prog span {
+  display: block;
+  background-color: var(--main-color);
+  height: 100%;
+  position: relative;
+}
+.Our-Skills .container .skills .prog-holder .prog span::before {
+  content: attr(data-progress);
+  position: absolute;
+  background-color: black;
+  color: white;
+  top: -40px;
+  right: -18px;
+  padding: 4px 0;
+  width: 40px;
+  text-align: center;
+  border-radius: 4px;
+}
+.Our-Skills .container .skills .prog-holder .prog span::after {
+  content: "";
+  position: absolute;
+  border-color: black transparent transparent transparent;
+  border-style: solid;
+  border-width: 8px;
+  right: -7px;
+  top: -15px;
+}
+/* end Our Skills */
