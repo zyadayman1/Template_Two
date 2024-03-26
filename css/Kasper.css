@@ -740,3 +740,34 @@ header .container nav .toggle-menu:hover + ul li a {
   top: -15px;
 }
 /* end Our Skills */
+
+/* start quote */
+.quote {
+  background-image: url(../images/quote.jpg);
+  background-size: cover;
+  position: relative;
+  padding: 100px 0;
+  text-align: center;
+  color: white;
+}
+.quote::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 75%);
+}
+.quote .container {
+  position: relative;
+}
+.quote .container q {
+  font-size: 30px;
+  margin: 20px;
+  display: block;
+}
+.quote .container span {
+  display: block;
+}
+/* end quote */
